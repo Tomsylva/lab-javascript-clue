@@ -111,12 +111,25 @@ let pistol = {
 };
 
 
-const weaponsArray = [rope, knife, candlestick, dumbbell, posion, ace, bat, trophy, pistol];
+const weaponsArray = [rope, knife, candlestick, dumbbell, poison, axe, bat, trophy, pistol];
 
 // Rooms Collection
 const roomsArray = ["Dining room", "Conservatory", "Kitchen", "Study", "Library", "Billiard Room", "Lounge", "Ballroom", "Hall", "Spa", "Living Room", "Observatory", "Theater", "Guest House", "Patio"];
 
 // ITERATION 2
+
+function selectRandom (array) {
+    return array[Math.floor(Math.random() * array.length)]
+}
+
+function pickMystery () {
+  let mysteryObject = {
+    suspect: selectRandom(suspectsArray),
+    weapon: selectRandom(weaponsArray),
+    room: selectRandom(roomsArray)
+  }
+  return mysteryObject
+}
 
 // ITERATION 3
 
