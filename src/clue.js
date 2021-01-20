@@ -113,7 +113,8 @@ let pistol = {
 
 const weaponsArray = [rope, knife, candlestick, dumbbell, poison, axe, bat, trophy, pistol];
 
-// Rooms Collection
+// Rooms Collection 
+// I made this an array as there was only a singfle value, the name itself, and an array seemed like a more appropriate choice of holding this information. I am aware that the developer of the clue.spec.js did this differently. 
 const roomsArray = ["Dining room", "Conservatory", "Kitchen", "Study", "Library", "Billiard Room", "Lounge", "Ballroom", "Hall", "Spa", "Living Room", "Observatory", "Theater", "Guest House", "Patio"];
 
 // ITERATION 2
