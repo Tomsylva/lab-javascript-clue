@@ -120,7 +120,7 @@ const roomsArray = ["Dining room", "Conservatory", "Kitchen", "Study", "Library"
 
 function selectRandom (array) {
     return array[Math.floor(Math.random() * array.length)]
-}
+};
 
 function pickMystery () {
   let mysteryObject = {
@@ -129,7 +129,14 @@ function pickMystery () {
     room: selectRandom(roomsArray)
   }
   return mysteryObject
-}
+};
 
 // ITERATION 3
 
+let mystery = pickMystery();
+
+function revealMystery (){
+  return `${mystery.suspect.firstName} ${mystery.suspect.lastName} killed Mr. Boddy using the ${mystery.weapon.name} in the ${mystery.room}!`;
+};
+
+console.log(revealMystery());
